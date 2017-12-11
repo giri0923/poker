@@ -1,3 +1,5 @@
+# Five Hand Poker Java Project
+
 # Compiling instructions:
  1. Clone the project from https://github.com/giri0923/poker to local.
  2. Import the project in Eclipse . File -> Import -> General -> Existing projects into workspace.
