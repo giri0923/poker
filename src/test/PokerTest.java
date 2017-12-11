@@ -17,6 +17,8 @@ import pokerFiveHand.PokerHand;
  */
 public class PokerTest {
 
+	Poker poker = new Poker();
+
 	@Test
 	public void test1() {
 		// one pair
@@ -33,7 +35,6 @@ public class PokerTest {
 				new PokerCard(CardValue.Three, CardType.Diamond),
 				new PokerCard(CardValue.King, CardType.Diamond));
 
-		Poker poker = new Poker();
 		assertEquals(2, poker.compare(hand1, hand2));
 	}
 

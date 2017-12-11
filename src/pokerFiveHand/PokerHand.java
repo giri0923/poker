@@ -10,6 +10,7 @@ import java.util.Comparator;
 
 public class PokerHand{
 	private PokerCard[] hand = new PokerCard[5];
+	private PokerHandType handType;
 	private int[] final_value = new int[hand.length + 1];
 	private int pokerHandType = 0;
 	private int firstPairIndex = 0;
@@ -39,6 +40,13 @@ public class PokerHand{
 	 */
 	public PokerCard[] getHand() {
 		return this.hand;
+	}
+
+	/**
+	 * @return the handType
+	 */
+	public PokerHandType getHandType() {
+		return handType;
 	}
 
 	/**
