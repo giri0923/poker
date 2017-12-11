@@ -53,7 +53,7 @@ public class PokerHand{
 	 * Computes the value of the hand
 	 * @return
 	 */
-	public int[] getValueOfHand() {
+	public int[] computeValueOfHand() {
 		Arrays.sort(hand,new Comparator<PokerCard>() {
 			@Override
 			public int compare(PokerCard o1, PokerCard o2) {
@@ -92,10 +92,7 @@ public class PokerHand{
 			pokerHandType = 9;
 
 		final_value[0] = pokerHandType;
-
-		for (int i=0; i<final_value.length; i++) {
-			System.out.println(" result "+ final_value[i]);
-		}
+		this.handType = PokerHandType.getPokerHandType(final_value[0]);
 
 		return final_value;
 	}
