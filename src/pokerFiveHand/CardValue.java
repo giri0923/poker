@@ -1,11 +1,9 @@
 package pokerFiveHand;
-
 /**
  * @author girish
- * Enum Type for CardValue
+ * Enum Type for CardValue ranges from 2 to Ace (highest value). Ace can be considered as lowest as well based on the requirements.
  *
  */
-
 public enum CardValue {
 	//Ace(0),
 	Two(2),
@@ -23,7 +21,6 @@ public enum CardValue {
 	Ace(14);
 
 	private int cardValue;
-
 	/**
 	 * @param val
 	 */
@@ -42,37 +39,39 @@ public enum CardValue {
 	/**
 	 * @param val
 	 * @return
+	 * Return the cardValue for corresponding card number for example returns CardValue.Three
 	 */
 	public static CardValue getCardValue(int val) {
 		switch(val) {
-			case 0:
-				return CardValue.Ace;
-			case 1:
-				return CardValue.Two;
+
 			case 2:
-				return CardValue.Three;
+				return CardValue.Two;
 			case 3:
-				return CardValue.Four;
+				return CardValue.Three;
 			case 4:
-				return CardValue.Five;
+				return CardValue.Four;
 			case 5:
-				return CardValue.Six;
+				return CardValue.Five;
 			case 6:
-				return CardValue.Seven;
+				return CardValue.Six;
 			case 7:
-				return CardValue.Eight;
+				return CardValue.Seven;
 			case 8:
-				return CardValue.Nine;
+				return CardValue.Eight;
 			case 9:
-				return CardValue.Ten;
+				return CardValue.Nine;
 			case 10:
-					return CardValue.Jack;
+				return CardValue.Ten;
 			case 11:
-					return CardValue.Queen;
+				return CardValue.Jack;
 			case 12:
+				return CardValue.Queen;
+			case 13:
 				return CardValue.King;
+			case 14:
+				return CardValue.Ace;
 			default:
-					return null;
+				return null;
 		}
 	}
 

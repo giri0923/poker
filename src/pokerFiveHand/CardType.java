@@ -2,9 +2,8 @@ package pokerFiveHand;
 
 /**
  * @author girish
- * Enum Type for CardType
+ * Enum  for CardType i.e face type. We assume its a generic deck of cards and it has 4 different types Diamond,heart,club and spade.
  */
-
 public enum CardType {
 	Diamond(0),
 	Heart(1),
@@ -31,6 +30,7 @@ public enum CardType {
 	/**
 	 * @param val
 	 * @return
+	 * Return CardType for given card type number
 	 */
 	public static CardType getCardType(int val) {
 		switch(val) {

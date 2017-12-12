@@ -2,11 +2,11 @@ package pokerFiveHand;
 
 /**
  * @author girish
- * Enum for PokerHandType
+ * Enum for PokerHandTypes in increasing order i.e HighCard hand lowest and royalFlush highest
  */
 
 public enum PokerHandType {
-	Bust(0),
+	HighCard(0),
 	OnePair(1),
 	TwoPair(2),
 	ThreeOfAKind(3),
@@ -18,7 +18,6 @@ public enum PokerHandType {
 	RoyalFlush(9);
 
 	private int pokerHandType;
-
 	/**
 	 * @param val
 	 */
@@ -36,11 +35,12 @@ public enum PokerHandType {
 	/**
 	 * @param val
 	 * @return
+	 * Returns pokerHandType for the corresponding type number
 	 */
 	public static PokerHandType getPokerHandType(int val) {
 		switch(val) {
 			case 0:
-			  return PokerHandType.Bust;
+			  return PokerHandType.HighCard;
 			case 1:
 			  return PokerHandType.OnePair;
 			case 2:
