@@ -25,4 +25,6 @@
    src/pokerFiveHand/CardValue.java - For face values - 2 to 14 (Ace - 14 , King - 13, Queen - 12, Jack -11)
    src/pokerFiveHand/PokerHandType.java - For single hand evaluation test cases.
 
- 
+# Please note:
+Considering the scope of the assessment, I assume that the hand will always be valid i.e an invalid hand is one with 5 7 value cards 
+
